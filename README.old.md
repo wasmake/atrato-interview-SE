@@ -1,1 +1,0 @@
-# atrato-entrevista-client-team
