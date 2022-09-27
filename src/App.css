@@ -1,38 +1,349 @@
-.App {
+.navbar {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+/* Make navbar-nav li horizontal */
+.navbar-nav {
+  flex-direction: row;
+}
+
+/* Make navbar-nav li horizontal */
+.navbar-nav {
+  list-style: none;
+  padding: 15px 0px;
+}
+
+.navbar-nav li {
+  padding: 0 10px;
+}
+
+.navbar-nav li a {
+  color: #001866 !important;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-nav li a:hover {
+  color: #001866 !important;
+  font-weight: 500;
+}
+
+.modal-dialog {
+  width: 80%;
+  max-width: 80%;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .inner-container {
+    padding: 0px 2px !important;
+  }	
+
+  .modal-dialog {
+    width: 95% !important;
+    max-width: 95% !important;
+    align-items: flex-start !important;
+  }	
+}
+
+@media screen and (min-width: 1201px) {
+  .modal-dialog {
+    width: 750px !important;
+    max-width: 750px !important;
+  }	
+}
+
+.grey-container {
+  width: 100%;
+  border-radius: 20px;
+  background-color: #f7f9fb;
+  box-shadow: 1px 1px 8px -3px #8d8d8d;
+  color: #5e5e5d;
+}
+
+.inner-container {
+  padding: 0px 10px;
+  margin-top: 4%;
+}
+
+/* Inner grey-container */
+.grey-container .inner-container {
+  padding: 20px;
+  margin-top: 2%;
+}
+
+/* Inner grey-container style th */
+.grey-container .inner-container th {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  color: #001866 !important;
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.grey-container .inner-container th a {
+  color: #001866 !important;
+  text-decoration: none;
+}
+
+.grey-container .inner-container td a {
+  padding: 4px 10px;
+  margin: 0px 2px;
+}
+
+.centerText {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rightText {
+  text-align: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.padding-tb8 {
+  padding: 8px 0px;
+}
+
+.padding-tb15 {
+  padding: 15px 0px;
+}
+
+.padding-20 {
+  padding: 20px;
+}
+
+span {
+  display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #001866;
+  margin: 0;
+}
+
+.status-inprogress {
+  background-color: #eef79f;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.status-pending {
+  background-color: #f0f0f0;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.status-rejected {
+  background-color: #eba4a4;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.buttonsRight a {
+  padding: 6px 10px;
+  margin: 0px 3px;
+}
+
+.buttonsRight button {
+  padding: 6px 10px;
+  margin: 0px 3px;
+}
+
+
+.statusFilter {
+  background-color: #f0f0f0;
+  border: 1px solid #356a80;
+  color: #356a80 !important;
+}
+
+.statusFilter:hover {
+  background-color: #cadbe4 !important;
+  border: 1px solid #356a80 !important;
+}
+
+.setStatus {
+  background-color: #003cff;
+  color: #fff !important;
+  text-transform: uppercase;
+}
+
+.setStatus:hover {
+  background-color: #092b9b !important;
+  color: #fff !important;
+}
+
+/* Make active filters show in the same line as any text */
+.activeFilters {
+  display: inline-block;
+  vertical-align: bottom;
+  align-items: baseline;
+}
+
+/* Marigin all spans to be vertically in the bottom inside .activeFilters */
+.activeFilters span {
+  margin: 0px 3px 0px 3px;
+}
+
+
+.badge-filter {
+  background-color: #f0f0f0;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-avatar {
+  background-color: #e4e6e7;
+  color: #aeb4b7;
+  overflow: hidden;
+  font-size: 50px;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.modal-avatar i {
+  padding-top: 20px;
+}
+
+.grey-modal {
+  height: auto;
+  border-radius: 20px;
+  background-color: #f8f8f9;
+  box-shadow: 1px 1px 8px -3px #8d8d8d;
+  color: #5e5e5d;
+}
+
+.grey-modal label {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #b8b8b8;
+}
+
+.custom-input {
+  background-color: transparent !important;
+  border-radius: 0px !important;
+  border: 0px;
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.small-input {
+  width: 100%;
+  padding: 0px;
+}
+
+.custom-input:disabled {
+  background-color: transparent !important;
+  border-radius: 0px !important;
+  border: 0px;
+  border-bottom: 0px;
+}
+
+.modal-close {
+  width: auto !important;
+  float: right;
+  margin-left:auto;
+  margin-top: -34px;
+  margin-right: -10px;
+  margin-bottom: 10px;
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.userId {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  font-weight: 200;
+  margin-top: -5px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #b8b8b8;
+}
+
+#selector select option {
+  color: #333;        
+   position: relative;  
+   top: 5px;
+ }
+ 
+ /*==================================================
+ remove the original arrow in select option dropdown
+ ==================================================*/
+ 
+ .selector-container {
+  background-color: #003cff !important;
+  width: auto + 20px;
+  border-radius: 5px;
+}
+
+.selector-box {
+  background-color: transparent !important;
+  color: #fff !important;
+  text-transform: uppercase;
+  border-radius: 0px !important;
+  border: 0px !important;
+  padding: 6px 18px;
+}
+
+ #selector {
+  background-color: transparent;
+ }
+ 
+ select {
+    padding: 0px 15px;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   -o-appearance:none;
+   appearance:none;
+   border-radius: 5px;
+ }
+
+ /* Remove hover and focus effects from select */
+ select:active, select:focus, select:hover {
+   outline: none;	
+    border: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* Remove the default arrow in IE */
+  select::-ms-expand {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* Remove the default arrow in Firefox */
+  select::-moz-focus-inner {
+    border: 0;
   }
-}
+
+  /* Remove the default arrow in Chrome */
+  select::-webkit-inner-spin-button {
+    display: none;
+  }
+
+  /* Remove the default arrow in Safari */
+  select::-webkit-search-cancel-button {
+    display: none;
+  }
+ 
+ select.input-lg {
+   height: 50px !important;
+   line-height:25px !important;
+ }
+ 
+ select + i.fa {
+  font-size: 13px;
+   float: right;
+   margin-top: -24px;
+   margin-right: 9px;
+   pointer-events: none;
+   color: #FFF;
+   padding-right: 5px;
+ }
+
+ .creditInfo {
+  margin-top: 15%;
+  background-color: #e3e5e9;
+  border-radius: 5px;
+  padding: 25px;
+ }
